@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Vtb.Trade.DbGate.Client.App": {
+      "commandName": "Project",
+      "commandLineArgs": "https://localhost:5001 DbGate.Client.App"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vtb.Trade.Configuration.Client\Vtb.Trade.Configuration.Client.csproj" />
+    <ProjectReference Include="..\Vtb.Trade.Configuration.Common\Vtb.Trade.Configuration.Common.csproj" />
+    <ProjectReference Include="..\Vtb.Trade.DbGate.Client\Vtb.Trade.DbGate.Client.csproj" />
+  </ItemGroup>
+
+</Project>
