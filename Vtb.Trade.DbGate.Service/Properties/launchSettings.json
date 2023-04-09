@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Vtb.Trade.DbGate.Service": {
+      "commandName": "Project",
+      "commandLineArgs": "https://localhost:5001 DbGate\\Portfolio",
+      "hotReloadEnabled": false,
+      "applicationUrl": "https://localhost:5002"
+    }
+  }
+}

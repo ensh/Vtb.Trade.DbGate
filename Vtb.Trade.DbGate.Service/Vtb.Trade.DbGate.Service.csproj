@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Configurations>Debug;Release</Configurations>
+		<AssemblyName>Vtb.Trade.DbGate.Service</AssemblyName>
+		<RootNamespace>Vtb.Trade.DbGate.Service</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<Optimize>false</Optimize>
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<WarningLevel>2</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>true</Optimize>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.45.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Vtb.Trade.Configuration.Common\Vtb.Trade.Configuration.Common.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.DbGate.Client\Vtb.Trade.DbGate.Client.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.Grpc.Common\Vtb.Trade.Grpc.Common.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.Hosting\Vtb.Trade.Hosting.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.Identity.Client\Vtb.Trade.Identity.Client.csproj" />		
+	</ItemGroup>
+</Project>

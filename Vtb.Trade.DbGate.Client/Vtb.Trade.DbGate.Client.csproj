@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Configurations>Debug;Release</Configurations>
+		<AssemblyName>Vtb.Trade.DbGate.Client</AssemblyName>
+		<RootNamespace>Vtb.Trade.DbGate.Client</RootNamespace>
+	</PropertyGroup>	
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>true</Optimize>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Linq" Version="4.3.0" />
+		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
+		<PackageReference Include="Google.Protobuf" Version="3.20.0" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.45.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.45.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Vtb.Trade.Configuration.Common\Vtb.Trade.Configuration.Common.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.DbGate.Common\Vtb.Trade.DbGate.Common.csproj" />
+		<ProjectReference Include="..\Vtb.Trade.Grpc.Common\Vtb.Trade.Grpc.Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Adapters\Micex\" />
+	</ItemGroup>
+
+</Project>
